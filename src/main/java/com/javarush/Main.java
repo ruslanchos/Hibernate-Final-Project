@@ -58,6 +58,9 @@ public class Main {
 
 
 
+
+
+
     private void shutdown() {
         if (nonNull(sessionFactory)) {
             sessionFactory.close();
