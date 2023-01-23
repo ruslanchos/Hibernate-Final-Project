@@ -27,4 +27,9 @@ redis-insight – опционально
 13. Сравнить скорость получения одних и тех же данных из MySQL и Redis.
 
 
-![img.png](img.png)
+RESULT:
+
+Connected to Redis
+
+Redis:	63 ms
+MySQL:	63 ms
