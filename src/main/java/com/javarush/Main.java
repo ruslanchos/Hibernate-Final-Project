@@ -63,7 +63,6 @@ public class Main {
         return session;
     }
 
-    @SuppressWarnings("unused")
     private RedisClient prepareRedisClient() {
         RedisClient redisClient = RedisClient.create(RedisURI.create("10.1.1.101", 6379));
         try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
@@ -81,7 +80,6 @@ public class Main {
         }
     }
 
-    @SuppressWarnings("unused")
     private List<City> fetchData(Main main) {
         try (Session session = main.sessionFactory.getCurrentSession()) {
             List<City> allCities = new ArrayList<>();
@@ -157,7 +155,6 @@ public class Main {
         }
     }
 
-    @SuppressWarnings("unused")
     private void testMySqlData(List<Integer> ids) {
         try (Session session = sessionFactory.getCurrentSession()) {
             session.getTransaction().begin();

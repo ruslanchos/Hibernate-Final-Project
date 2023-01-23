@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe0219b-2eac-448e-ab08-104edd3d9b73" name="Changes" comment="004 - add README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/dao/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/dao/CityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/domain/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/domain/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/domain/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/domain/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/domain/CountryLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/domain/CountryLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/redis/CityCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/redis/CityCountry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/redis/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/redis/Language.java" afterDir="false" />
-    </list>
+    <list default="true" id="fbe0219b-2eac-448e-ab08-104edd3d9b73" name="Changes" comment="004 - add README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
