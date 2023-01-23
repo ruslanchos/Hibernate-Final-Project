@@ -63,6 +63,8 @@ public class Main {
         return session;
     }
 
+
+    @SuppressWarnings(value = "test")
     private RedisClient prepareRedisClient() {
         RedisClient redisClient = RedisClient.create(RedisURI.create("10.1.1.101", 6379));
         try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
@@ -154,7 +156,7 @@ public class Main {
             }
         }
     }
-
+    @SuppressWarnings(value = "test")
     private void testMySqlData(List<Integer> ids) {
         try (Session session = sessionFactory.getCurrentSession()) {
             session.getTransaction().begin();
