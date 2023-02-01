@@ -64,7 +64,7 @@ public class Main {
     }
 
 
-    @SuppressWarnings(value = "test")
+    @SuppressWarnings(value = "Lowtest")
     private RedisClient prepareRedisClient() {
         RedisClient redisClient = RedisClient.create(RedisURI.create("10.1.1.101", 6379));
         try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
@@ -156,7 +156,7 @@ public class Main {
             }
         }
     }
-    @SuppressWarnings(value = "test")
+    @SuppressWarnings(value = "Lowtest")
     private void testMySqlData(List<Integer> ids) {
         try (Session session = sessionFactory.getCurrentSession()) {
             session.getTransaction().begin();
@@ -175,14 +175,21 @@ public class Main {
         List<CityCountry> preparedData = main.transformData(allCities);
         main.pushToRedis(preparedData);
 
+
+        //закроем текущую сессию, чтоб точно делать запрос к БД, а не вытянуть данные из кэша
         main.sessionFactory.getCurrentSession().close();
 
+        //выбираем случайных 10 id городов
+        //так как мы не делали обработку невалидных ситуаций, используй существующие в БД id
         List<Integer> ids = List.of(3, 2545, 123, 4, 189, 89, 3458, 1189, 10, 102);
 
+        //REDIS
         long startRedis = System.currentTimeMillis();
         main.testRedisData(ids);
+        main.pushToRedis(preparedData);
         long stopRedis = System.currentTimeMillis();
 
+        //MYSQL
         long startMySql = System.currentTimeMillis();
         main.testMySqlData(ids);
         long stopMySql = System.currentTimeMillis();
