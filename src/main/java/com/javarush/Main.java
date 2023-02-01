@@ -189,7 +189,7 @@ public class Main {
         main.pushToRedis(preparedData);
         long stopRedis = System.currentTimeMillis();
 
-        //MYSQL
+        //MYSQL check
         long startMySql = System.currentTimeMillis();
         main.testMySqlData(ids);
         long stopMySql = System.currentTimeMillis();
